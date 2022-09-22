@@ -1,0 +1,27 @@
+.btn-tab {
+  width: 200px;
+  background-color: white;
+  color: black;
+  border-right: none;
+
+}
+
+.btn-tab:hover, .btn-tab:active{
+  background-color: #5a9bd5;
+  color: white;
+}
+
+.enable {
+  background-color: #5a9bd5;
+  color: white;
+}
+
+
+.disable{
+  background-color: white;
+  color: black;
+}
+
+.padding {
+  padding: 55px 12px 10px 12px;
+}

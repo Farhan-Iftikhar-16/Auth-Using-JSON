@@ -1,0 +1,23 @@
+<div class="paginator-container" *ngIf="items && items.length > 0">
+  <div [ngClass]="activePage === 1 ? 'd-none' : 'd-flex'">
+    <div class="first-page paginator"  (click)="navigateToFirstPage()">
+      <i class="bi bi-chevron-double-left"></i>
+    </div>
+    <div class="previous-page paginator" (click)="navigatePrevious()">
+      <i class="bi bi-chevron-left"></i>
+    </div>
+  </div>
+  <ng-container *ngFor="let page of currentPages">
+    <div class="page-number paginator" (click)="navigateTo(page)" [class.active]="activePage === page" (click)="activePage = page">
+      <span>{{page}}</span>
+    </div>
+  </ng-container>
+  <div [ngClass]="activePage === totalPages[totalPages.length - 1] ? 'd-none' : 'd-flex'">
+    <div class="next-page paginator" (click)="navigateNext()">
+      <i class="bi bi-chevron-right"></i>
+    </div>
+    <div class="last-page paginator" (click)="navigateToLastPage()">
+      <i class="bi bi-chevron-double-right"></i>
+    </div>
+  </div>
+</div>

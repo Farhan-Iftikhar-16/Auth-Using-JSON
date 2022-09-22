@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 mt">
+
+    <div class="header-2">
+      <select (change)="onDropdownValueSelected($event)">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+      </select>
+
+      <select (change)="onDropdownValueSelected($event)">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+      </select>
+
+      <select (change)="onDropdownValueSelected($event)">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+      </select>
+
+      <select (change)="onDropdownValueSelected($event)">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+      </select>
+
+      <select (change)="onDropdownValueSelected($event)">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+      </select>
+
+      <select (change)="onDropdownValueSelected($event)">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="row d-inline">
+  <div class="col-lg-12 col-md-12 col-sm-12 d-grid">
+    <div class="clickable-div">
+      <div class="inner-clickable" (click)="showInfo()"><img src="assets/images/search.jpg" class="w-50"><span class="font-15">Click Here</span></div>
+      <div class="inner-clickable" (click)="showInfo()"><img src="assets/images/search.jpg" class="w-50"><span class="font-15">Click Here</span></div>
+      <div class="inner-clickable" (click)="redirectToDashboard()"><img src="assets/images/search.jpg" class="w-50"><span class="font-15">Click Here me</span></div>
+    </div>
+    <div class="clickable-div">
+      <div class="inner-clickable" (click)="showInfo()"><img src="assets/images/search.jpg" class="w-50"><span class="font-15">Click Here</span></div>
+      <div class="inner-clickable" (click)="showInfo()"><img src="assets/images/search.jpg" class="w-50"><span class="font-15">Click Here</span></div>
+      <div class="inner-clickable" (click)="showInfo()"><img src="assets/images/search.jpg" class="w-50"><span class="font-15">Click Here</span></div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <router-outlet></router-outlet>
+   </div>
+</div>

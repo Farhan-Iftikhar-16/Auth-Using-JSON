@@ -1,0 +1,74 @@
+.text-white {
+  color: white;
+}
+
+.login-div {
+  margin-left: 421px;
+  margin-top: 69px
+}
+
+.mt {
+  margin-top: -121px;
+}
+
+.header-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: cadetblue;
+  padding: 10px;
+}
+
+select {
+  background-color: azure;
+  border: 0;
+  border-radius: 4px;
+  width: 105px;
+  height: 35px;
+  padding:  5px;
+  position: relative;
+  margin: 2px 30px 2px 0;
+}
+
+.dropdown:active {
+  .dropdown-content{
+    display: block !important;
+  }
+}
+
+.dropdown:focus {
+  .dropdown-content{
+    display: block !important;
+  }
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.clickable-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-clickable {
+  display: grid;
+  margin-left: 85px;
+  margin-bottom: 80px;
+  cursor: pointer;
+}
+
+.w-50 {
+  width: 50px;
+}
+
+.font-15 {
+  font-size: 15px;
+}

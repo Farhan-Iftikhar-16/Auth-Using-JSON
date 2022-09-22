@@ -1,0 +1,49 @@
+.login-container {
+  padding: 30px;
+  box-shadow: rgb(0 0 0 / 16%) 0 0.0625rem 7rem 0;
+  border-radius: 10px;
+  background: white;
+  margin-bottom: 50px;
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    padding: 20px 0;
+    
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+
+  img {
+    width: 100%;
+  }
+}
+
+input {
+  background: lightblue;
+}
+
+.button-primary:active {
+  background-color:#5a9bd5 ;
+}
+
+.enable {
+  background-color: #5a9bd5;
+  color: white;
+}
+
+.disable{
+  background-color: white;
+  color: black;
+}
+
+.btn-focus {
+  transition: background-color 2s black;
+}

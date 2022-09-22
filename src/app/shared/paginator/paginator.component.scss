@@ -1,0 +1,19 @@
+.paginator-container{
+  display: flex;
+
+  .paginator {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border: 2px solid #94a5b1;
+    cursor: pointer;
+  }
+
+  .paginator.active, .paginator:hover {
+    background: #5a9bd5;
+    color: white;
+  }
+}

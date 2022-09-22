@@ -1,0 +1,155 @@
+table, th, td {
+  border: 3px solid white;
+  border-collapse: collapse;
+  vertical-align: top;
+}
+
+tr {
+  min-width: 50px;
+  min-height: 60px;
+  font-weight: 500;
+}
+
+th, td {
+  vertical-align: top;
+  font-size: 20px;
+}
+
+td {
+  padding: 10px;
+}
+
+tbody tr > td:first-child {
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background-color: #bdd7ee;
+}
+
+th {
+  background-color: #5a9bd5;
+  align-items: center;
+  padding: 15px;
+}
+
+img {
+  margin-left: 20px;
+  height: 55px;
+  width: 60%;
+}
+
+.designimg {
+  margin-top: 10px;
+  width: 22%;
+  flex-direction: column;
+}
+
+p {
+  margin-left: 20px;
+  font-weight: bold;
+  color: #165f9f;
+}
+
+.split {
+  width: 20%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  /* overflow-x: hidden; */
+}
+
+.left {
+  left: 0;
+  background-color: white;
+}
+
+.right {
+  right: 0;
+  background-color: white;
+}
+
+.splitr {
+  width: 80%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  /* overflow-x: hidden; */
+}
+
+:host::ng-deep {
+  .footer.container {
+    max-width: 100%;
+  }
+}
+
+// div{
+//   background-color: #94a5b1;
+// }
+.mt {
+  margin-top: -121px;
+}
+
+
+.btn-div {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  height: 80%;
+  margin-left: 70%;
+  margin-top: 95%;
+}
+
+.main-div {
+  width: 70%;
+  position: relative;
+  left: 10%;
+}
+
+.btn-tab {
+  width: 200px;
+  background-color: white;
+  color: black;
+
+}
+
+.btn-tab:focus,
+.btn-tab:active {
+  background-color: #5a9bd5;
+  color: white;
+
+}
+
+.enable {
+  background-color: #5a9bd5;
+  color: white;
+}
+
+.disable {
+  background-color: white;
+  color: black;
+}
+
+.table-container {
+  width: 100%;
+
+  .table {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .table-container {
+    width: 100%;
+
+    .table {
+      width: 100%;
+
+      th, td {
+        font-size: 12px;
+      }
+    }
+  }
+}
+

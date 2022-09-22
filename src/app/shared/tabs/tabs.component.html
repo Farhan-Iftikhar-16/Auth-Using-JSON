@@ -1,0 +1,8 @@
+<div class="d-flex flex-column align-items-end padding">
+  <div class="mb-5"><button class="btn-tab" (click)="activeTabIndex = 1; emitActiveTabIndex.emit(activeTabIndex)" [ngClass]="{'enable' : activeTabIndex === 1}">Tab 1 </button></div>
+  <div class="mb-5"><button class="btn-tab" (click)="activeTabIndex = 2; emitActiveTabIndex.emit(activeTabIndex)" [ngClass]="{'enable' : activeTabIndex === 2}">Tab 2</button></div>
+  <div class="mb-5"><button class="btn-tab" (click)="activeTabIndex = 3; emitActiveTabIndex.emit(activeTabIndex)" [ngClass]="{'enable' : activeTabIndex === 3}">Tab 3</button></div>
+  <div class="mb-5"><button class="btn-tab" (click)="activeTabIndex = 4; emitActiveTabIndex.emit(activeTabIndex)" [ngClass]="{'enable' : activeTabIndex === 4}">Tab 4</button></div>
+  <div class="mb-5"><button class="btn-tab" (click)="activeTabIndex = 5; emitActiveTabIndex.emit(activeTabIndex)" [ngClass]="{'enable' : activeTabIndex === 5}">Tab 5</button></div>
+  <div><button class="btn-tab"(click)="activeTabIndex = 6; emitActiveTabIndex.emit(activeTabIndex)" [ngClass]="{'enable' : activeTabIndex === 6}">Tab 6</button></div>
+</div>

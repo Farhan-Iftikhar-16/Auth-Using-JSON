@@ -1,0 +1,72 @@
+<div>
+  <div class="d-flex justify-content-end">
+    <button (click)="showInfo()" class="button-secondary">Refresh</button>
+  </div>
+  <div class="d-flex justify-content-between">
+    <div style="width: 90%">
+      <div class="d-flex justify-content-center mb-3">
+        <button (click)="showInfo()" class="button-secondary">Create New</button>
+        <button (click)="showInfo()" class="button-secondary ms-2">Search Letter</button>
+      </div>
+      <div class="table-container d-flex flex-column align-items-center">
+        <table class="table table-striped">
+          <thead>
+            <tr class="bg-primary text-center" style="color: white">
+              <th scope="col">Queue Name</th>
+              <th scope="col">Total</th>
+              <th scope="col">Unprocessed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngIf="items1ToDisplay && items1ToDisplay.length > 0">
+              <ng-container *ngFor="let item of items1ToDisplay">
+                <tr  class="text-center">
+                  <td routerLink="/user/item-details">{{item?.caseNumber}}</td>
+                  <td>{{item?.controlNumber}}</td>
+                  <td>{{item?.id}}</td>
+                </tr>
+              </ng-container>
+            </ng-container>
+          </tbody>
+        </table>
+        <app-paginator [items]="items" (itemsToShow)="items1ToDisplay = $event; changeDetectionRef.detectChanges()"></app-paginator>
+        <table class="table table-striped">
+          <thead>
+          <tr class="bg-primary text-center" style="color: white">
+            <th scope="col">File#</th>
+            <th scope="col">Total</th>
+            <th scope="col">Unprocessed</th>
+          </tr>
+          </thead>
+          <tbody>
+          <ng-container *ngIf="items2ToDisplay && items2ToDisplay.length > 0">
+            <ng-container *ngFor="let item of items2ToDisplay">
+              <tr class="text-center">
+                <td routerLink="/user/item-details">{{item?.caseNumber}}</td>
+                <td>{{item?.controlNumber}}</td>
+                <td>{{item?.id}}</td>
+              </tr>
+            </ng-container>
+          </ng-container>
+          </tbody>
+        </table>
+        <app-paginator [items]="items" (itemsToShow)="items2ToDisplay = $event; changeDetectionRef.detectChanges()"></app-paginator>
+      </div>
+    </div>
+
+    <div>
+      <span style="display: inline-block; padding-top: 15px">Total Records: {{items?.length}}</span>
+    </div>
+
+
+
+  </div>
+
+
+
+  <div class="d-flex justify-content-end">
+    <!-- <button (click)="onSendNotificationClicked()" class="button button1 me-3">Send Notification</button>
+    <button (click)="fileUploadInput.click()" class="button button2">Upload Document</button>
+    <input type="file" [hidden]="true" #fileUploadInput (change)="onUploadDocumentClicked()"> -->
+  </div>
+</div>

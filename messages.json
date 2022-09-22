@@ -1,0 +1,7 @@
+{
+  "loginSuccess": "Successfully login",
+  "loginFail": "login fail",
+  "formInvalid": "Form invalid",
+  "userNotFound": "User not found",
+  "passwordNotMatch": "Password does not match"
+}
